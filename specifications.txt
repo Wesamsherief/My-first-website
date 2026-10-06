@@ -1,0 +1,22 @@
+Tags:
+
+<p></p>
+<ul></ul>
+<li><li>
+<button></button>
+<header><header>
+<main><main>
+<fotter><footer>
+<script><script>
+<style><style>
+<img>
+
+CSS properties:
+
+text-align
+margin
+font-size
+font-weight
+align-items
+
+Brief: I chose pop up boxes in JavaScript for my button"About" to link to other page and chose bootstrap icons to make "home icon" as well as rounded image features and a link to the library.
