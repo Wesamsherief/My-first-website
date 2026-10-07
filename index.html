@@ -1,33 +1,79 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Wesam Sherief</title>
+        
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <link href="style1.css" rel="stylesheet" >
+        <!-- Custom CSS & Fonts -->
+        <link href="style1.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-        <meta name="viewport" content = "initial-scale=1, width=device-width">
+
+        <!-- JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <script>
-           document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("myBtn").addEventListener("click", function() {
-    if (confirm("Go to next page?")) {
-      window.location.href = "About.html";
-    }
-  });
-});
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("aboutCard").addEventListener("click", function(e) {
+                    e.preventDefault();
+                    if (confirm("Go to next page?")) {
+                        window.location.href = "About.html";
+                    }
+                });
+            });
         </script>
-
     </head>
-    <body class="body">
-        <header class="header">Wesam sherief</header>
-        <button onclick="document.location='info.html'" class="button1">My personal info</button>
-        <main>
-            <button onclick="document.location='hobbies.html'" class="button2">My hobbies</button>
-        </main>
-        <footer>
+    <body class="body bg-light">
+        <!-- Header -->
+        <header class="header text-center my-4">
+            <h1>Wesam Sherief</h1>
+        </header>
 
-          <button id="myBtn" class="button3">About</button>
+        <!-- Main Content -->
+        <main class="container my-4">
+            <div class="row g-4 justify-content-center">
+                
+                <!-- Personal Info Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title fw-bold">Personal Info</h5>
+                            <p class="card-text flex-grow-1">Learn more about my personal background and details.</p>
+                            <a href="info.html" class="btn btn-primary mt-auto">My Personal Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title fw-bold">Hobbies</h5>
+                            <p class="card-text flex-grow-1">Explore my passions, interests, and favorite activities.</p>
+                            <a href="hobbies.html" class="btn btn-primary mt-auto">My Hobbies</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title fw-bold">About</h5>
+                            <p class="card-text flex-grow-1">Read more details about who I am and what I do.</p>
+                            <a href="About.html" id="aboutCard" class="btn btn-primary mt-auto">About Me</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-3 text-muted">
+            <p>&copy; Wesam Sherief</p>
         </footer>
     </body>
 </html>
